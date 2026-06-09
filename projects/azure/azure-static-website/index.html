@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azure Cloud Portfolio Platform | Austin Montgomery</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;color:#EAEAEA;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('../../../background.jpg');
+background-size:cover;background-position:center;background-attachment:fixed;
+}
+a{text-decoration:none}
+nav{display:flex;justify-content:flex-end;gap:15px;padding:25px 50px}
+.nav-btn{color:#EAEAEA;border:1px solid #EAEAEA;padding:10px 18px;border-radius:6px;transition:.25s}
+.nav-btn:hover{background:#EAEAEA;color:#111}
+.azure{color:#0078D4;border-color:#0078D4}
+.azure:hover{background:#0078D4;color:white}
+.aws{color:#FF9900;border-color:#FF9900}
+.aws:hover{background:#FF9900;color:black}
+.hero{text-align:center;padding:80px 30px 50px}
+.hero h1{font-size:3.5rem;color:white;margin-bottom:15px}
+.hero p{color:#B8B8B8;font-size:1.1rem}
+.section{max-width:1100px;margin:30px auto;padding:40px;background:rgba(15,15,15,.8);border-radius:18px}
+.section h2{color:#0078D4;margin-bottom:20px}
+.section p,.section li{line-height:1.8}
+.project-image{width:100%;border-radius:12px;margin:20px 0;border:1px solid rgba(255,255,255,.1)}
+.arch{background:#000;padding:20px;border-radius:12px;white-space:pre-wrap}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:rgba(255,255,255,.04);padding:15px;border-radius:10px}
+footer{text-align:center;padding:40px;color:#999}
+</style>
+</head>
+<body>
+<nav>
+<a href="../../../index.html" class="nav-btn">Home</a>
+<a href="../index.html" class="nav-btn azure">Azure</a>
+<a href="../../aws/index.html" class="nav-btn aws">AWS</a>
+<a href="../../../resume/index.html" class="nav-btn">Resume</a>
+</nav>
+
+<section class="hero">
+<h1>Azure Cloud Portfolio Platform</h1>
+<p>Azure Storage, Static Website Hosting, Monitoring, Alerting, and Cost Governance</p>
+</section>
+
+<section class="section">
+<h2>Project Overview</h2>
+<p>This project was built to gain hands-on experience with Microsoft Azure while preparing for the AZ-900 certification. The solution uses Azure Static Website Hosting, Azure Monitor, Action Groups, and Azure Cost Management to create a low-cost cloud-hosted portfolio platform with monitoring and governance controls.</p>
+</section>
+
+<section class="section"><h2>Step 1: Create Resource Group</h2><img class="project-image" src="images/step1-resource-group.png"><p>Created a dedicated Resource Group named <strong>rg-portfolio-dev</strong> in East US to logically organize and manage all project resources.</p></section>
+
+<section class="section"><h2>Step 2: Create Storage Account</h2><img class="project-image" src="images/step2-storage-account.png"><p>Created Storage Account <strong>austinportfolio001</strong> using Azure Blob Storage, Standard performance, and Locally Redundant Storage (LRS) to provide a cost-effective hosting platform.</p></section>
+
+<section class="section"><h2>Step 3: Enable Static Website Hosting</h2><img class="project-image" src="images/step3-static-website.png"><p>Enabled Static Website Hosting and configured <strong>index.html</strong> as the default document and <strong>404.html</strong> as the custom error page.</p></section>
+
+<section class="section"><h2>Step 4: Access the $web Container</h2><img class="project-image" src="images/step4-web-container.png"><p>Navigated to the automatically created <strong>$web</strong> container, which serves as the root directory for Azure Static Website Hosting.</p></section>
+
+<section class="section"><h2>Step 5: Upload Website Files</h2><img class="project-image" src="images/step5-upload-files.png"><p>Uploaded index.html and 404.html into the $web container to deploy the initial version of the website.</p></section>
+
+<section class="section"><h2>Step 6: Configure Azure Monitor</h2><img class="project-image" src="images/step6-alerts.png"><p>Accessed Azure Monitor through the Storage Account and prepared monitoring rules to track website activity.</p></section>
+
+<section class="section"><h2>Step 7: Create Alert Rule</h2><img class="project-image" src="images/step7-action-group.png"><p>Created a Transactions metric alert using a static threshold. The alert triggers when total transactions exceed 100.</p></section>
+
+<section class="section"><h2>Step 8: Configure Notifications</h2><img class="project-image" src="images/step8-notifications.png"><p>Configured email and SMS notifications through an Action Group named PortfolioAlerts to provide real-time awareness of monitored events.</p></section>
+
+<section class="section"><h2>Step 9: Review Monitoring Configuration</h2><img class="project-image" src="images/step9-alert-review.png"><p>Reviewed the complete monitoring configuration and finalized the alert rule named <strong>High Website Traffic Alert</strong>.</p></section>
+
+<section class="section"><h2>Step 10: Access Cost Management</h2><img class="project-image" src="images/step10-cost-management.png"><p>Opened Azure Cost Management to monitor spending, review billing data, and implement governance controls.</p></section>
+
+<section class="section"><h2>Step 11: Create Budget</h2><img class="project-image" src="images/step11-budget.png"><p>Created a monthly budget named <strong>Portfolio_Website_Budget</strong> with a spending limit of $5 per month.</p></section>
+
+<section class="section"><h2>Step 12: Configure Budget Alerts</h2><img class="project-image" src="images/step12-budget-alerts.png"><p>Configured automated email alerts at 80% and 100% budget utilization to support proactive cost management.</p></section>
+
+<section class="section"><h2>Website Redesign</h2><img class="project-image" src="images/website-redesign.png"><p>After validating the Azure infrastructure, the website was redesigned into a professional portfolio platform with dedicated Azure, AWS, and Resume sections.</p></section>
+
+<section class="section"><h2>Final Architecture</h2><img class="project-image" src="images/architecture.png"><div class="arch">
+Internet Users
+      |
+Azure Static Website Hosting
+      |
+Storage Account (austinportfolio001)
+      |
++-------------------------------+
+| Website | Monitoring | Budget |
++-------------------------------+
+      |         |         |
+ Azure Monitor  |   Cost Management
+      |         |
+ Action Group   |
+      |         |
+ Email & SMS Alerts
+</div></section>
+
+<section class="section">
+<h2>Skills Demonstrated</h2>
+<div class="skills">
+<div class="card">Azure Resource Groups</div>
+<div class="card">Azure Storage Accounts</div>
+<div class="card">Azure Static Website Hosting</div>
+<div class="card">Azure Monitor</div>
+<div class="card">Alert Rules & Action Groups</div>
+<div class="card">Email & SMS Notifications</div>
+<div class="card">Azure Cost Management</div>
+<div class="card">Budget Governance</div>
+<div class="card">HTML & CSS</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Lessons Learned</h2>
+<p>This project reinforced the importance of selecting cloud services based on workload requirements, implementing monitoring from the start, and applying cost controls even to small deployments. It also provided practical experience with cloud governance concepts that extend beyond basic resource deployment.</p>
+</section>
+
+<section class="section">
+<h2>Project Outcome</h2>
+<p>The project successfully delivered a cloud-hosted portfolio platform backed by Azure Storage, monitoring, alerting, and cost governance features. It now serves as the foundation for future Azure, AWS, networking, cybersecurity, and DevOps projects.</p>
+<img class="project-image" src="images/final-website.png">
+</section>
+
+<footer>© 2026 Austin Montgomery</footer>
+</body>
+</html>
