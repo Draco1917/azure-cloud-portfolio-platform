@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found | Austin Montgomery</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #EAEAEA;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url('background.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 25px 50px;
+}
+
+.nav-btn {
+    color: #EAEAEA;
+    text-decoration: none;
+    border: 1px solid #EAEAEA;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.nav-btn:hover {
+    background: #EAEAEA;
+    color: #111;
+}
+
+.azure {
+    color: #0078D4;
+    border-color: #0078D4;
+}
+
+.azure:hover {
+    background: #0078D4;
+    color: white;
+}
+
+.aws {
+    color: #FF9900;
+    border-color: #FF9900;
+}
+
+.aws:hover {
+    background: #FF9900;
+    color: black;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-code {
+    font-size: 8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.error-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.error-text {
+    color: #B8B8B8;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    transition: 0.25s;
+}
+
+.home-btn:hover {
+    background: white;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="/index.html" class="nav-btn">Home</a>
+    <a href="/projects/azure/index.html" class="nav-btn azure">Azure</a>
+    <a href="/projects/aws/index.html" class="nav-btn aws">AWS</a>
+    <a href="/resume/index.html" class="nav-btn">Resume</a>
+</nav>
+
+<div class="container">
+
+    <div class="error-code">404</div>
+
+    <h1 class="error-title">Page Not Found</h1>
+
+    <p class="error-text">
+        The page you were looking for does not exist, may have been moved,
+        or is currently under development. Return to the homepage to
+        continue exploring my cloud engineering, cybersecurity, and
+        infrastructure projects.
+    </p>
+
+    <a href="/index.html" class="home-btn">
+        Return Home
+    </a>
+
+</div>
+
+<footer>
+    © 2026 Austin Montgomery
+</footer>
+
+</body>
+</html>
