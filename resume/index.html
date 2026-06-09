@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume | Austin Montgomery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#EAEAEA;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+    url('../background.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    padding:25px 50px;
+}
+
+.nav-btn{
+    color:#EAEAEA;
+    border:1px solid #EAEAEA;
+    padding:10px 18px;
+    border-radius:6px;
+    transition:.25s;
+}
+
+.nav-btn:hover{
+    background:#EAEAEA;
+    color:#111;
+}
+
+.azure{
+    color:#0078D4;
+    border-color:#0078D4;
+}
+
+.azure:hover{
+    background:#0078D4;
+    color:white;
+}
+
+.aws{
+    color:#FF9900;
+    border-color:#FF9900;
+}
+
+.aws:hover{
+    background:#FF9900;
+    color:black;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 30px 70px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#B8B8B8;
+    font-size:1.2rem;
+}
+
+.section{
+    max-width:1100px;
+    margin:30px auto;
+    padding:40px;
+
+    background:rgba(15,15,15,.80);
+    border-radius:18px;
+    backdrop-filter:blur(4px);
+}
+
+.section h2{
+    color:white;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.section h3{
+    color:#0078D4;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+.section p{
+    color:#D0D0D0;
+    line-height:1.8;
+}
+
+.section ul{
+    padding-left:25px;
+}
+
+.section li{
+    margin-bottom:10px;
+    color:#D0D0D0;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    padding:20px;
+    border-radius:12px;
+}
+
+.project-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:12px;
+}
+
+.project-link{
+    display:inline-block;
+    margin-top:15px;
+    color:#0078D4;
+    font-weight:bold;
+}
+
+.project-link:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#B8B8B8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<a href="../index.html" class="nav-btn">
+Home
+</a>
+
+<a href="../projects/azure/index.html" class="nav-btn azure">
+Azure
+</a>
+
+<a href="../projects/aws/index.html" class="nav-btn aws">
+AWS
+</a>
+
+<a href="index.html" class="nav-btn">
+Resume
+</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Austin Montgomery</h1>
+
+<p>
+Cloud Engineering Portfolio
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>About</h2>
+
+<p>
+Focused on cloud infrastructure, Azure administration,
+automation, and platform engineering. Building hands-on
+projects with Microsoft Azure to develop practical experience
+in cloud deployment, monitoring, governance, cost management,
+and infrastructure operations.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Certifications</h2>
+
+<h3>In Progress</h3>
+
+<ul>
+<li>Microsoft Azure Fundamentals (AZ-900)</li>
+</ul>
+
+<h3>Planned</h3>
+
+<ul>
+<li>Microsoft Azure Administrator (AZ-104)</li>
+<li>CompTIA Network+</li>
+<li>CompTIA Security+</li>
+</ul>
+
+</section>
+
+<section class="section">
+
+<h2>Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3>Cloud</h3>
+
+<ul>
+<li>Microsoft Azure</li>
+<li>Azure Storage</li>
+<li>Azure Monitor</li>
+<li>Azure Cost Management</li>
+<li>Azure Resource Groups</li>
+<li>Static Website Hosting</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Infrastructure</h3>
+
+<ul>
+<li>Virtual Machines</li>
+<li>Monitoring & Alerting</li>
+<li>Cost Governance</li>
+<li>Cloud Resource Management</li>
+</ul>
+
+</div>
+
+<div class="skill-card">
+
+<h3>Programming</h3>
+
+<ul>
+<li>Python</li>
+<li>JavaScript</li>
+<li>C++</li>
+<li>Lua</li>
+<li>Html</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Education</h2>
+
+<h3>Planned</h3>
+
+<p>
+<strong>Western Governors University (WGU)</strong>
+</p>
+
+<p>
+Bachelor of Science – Cloud and Network Engineering
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Featured Project</h2>
+
+<div class="project-card">
+
+<h3>Azure Cloud Portfolio Platform</h3>
+
+<p>
+Designed and deployed a cloud-hosted portfolio using Azure
+Storage Static Website Hosting. Implemented monitoring,
+alerting, notification systems, and cost governance controls
+using Azure Monitor and Azure Cost Management.
+</p>
+
+<a href="../projects/azure/azure-static-website/index.html"
+class="project-link">
+View Project Documentation →
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Additional Experience</h2>
+
+<h3>Software Development</h3>
+
+<ul>
+<li>9+ years programming experience</li>
+<li>Experience with Python, JavaScript, Lua, Html, and C++</li>
+<li>Developed automation scripts, applications, and technical projects</li>
+</ul>
+
+<h3>Robotics</h3>
+
+<ul>
+<li>6+ years of robotics experience</li>
+<li>Experience designing, building, troubleshooting, and programming robotic systems</li>
+</ul>
+
+</section>
+
+<section class="section">
+
+<h2>Current Focus</h2>
+
+<p>
+Currently developing hands-on Azure projects while preparing for:
+</p>
+
+<br>
+
+<ul>
+<li>Microsoft Azure Fundamentals (AZ-900)</li>
+<li>Microsoft Azure Administrator (AZ-104)</li>
+<li>CompTIA Network+</li>
+<li>CompTIA Security+</li>
+</ul>
+
+<br>
+
+<p>
+Long-term focus on cloud engineering, infrastructure administration,
+automation, and cloud architecture.
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Austin Montgomery
+
+</footer>
+
+</body>
+</html>
