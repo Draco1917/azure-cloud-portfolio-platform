@@ -1,4 +1,3 @@
-# azure-cloud-portfolio-platform
 # Azure Cloud Portfolio Platform
 
 ## Overview
