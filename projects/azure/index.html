@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Azure Projects | Austin Montgomery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#EAEAEA;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url('../../background.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    padding:25px 50px;
+}
+
+.nav-btn{
+    color:#EAEAEA;
+    border:1px solid #EAEAEA;
+    padding:10px 18px;
+    border-radius:6px;
+    transition:.25s;
+}
+
+.nav-btn:hover{
+    background:#EAEAEA;
+    color:#111;
+}
+
+.azure{
+    color:#0078D4;
+    border-color:#0078D4;
+}
+
+.azure:hover{
+    background:#0078D4;
+    color:white;
+}
+
+.aws{
+    color:#FF9900;
+    border-color:#FF9900;
+}
+
+.aws:hover{
+    background:#FF9900;
+    color:black;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 30px 70px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#B8B8B8;
+    font-size:1.2rem;
+}
+
+.section{
+    max-width:1100px;
+    margin:40px auto;
+    padding:40px;
+
+    background:rgba(15,15,15,.75);
+    border-radius:18px;
+    backdrop-filter:blur(4px);
+}
+
+.section h2{
+    color:white;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    display:block;
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+
+    background:rgba(255,255,255,.03);
+
+    transition:.25s;
+}
+
+.project-card:hover{
+    transform:translateY(-4px);
+    border-color:#0078D4;
+    background:rgba(0,120,212,.08);
+}
+
+.project-card h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    color:#B8B8B8;
+    line-height:1.6;
+}
+
+.coming-soon{
+    opacity:.6;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#B8B8B8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="../../index.html" class="nav-btn">
+Home
+</a>
+
+<a href="../azure/index.html" class="nav-btn azure">
+Azure
+</a>
+
+<a href="../aws/index.html" class="nav-btn aws">
+AWS
+</a>
+
+<a href="../../resume/index.html" class="nav-btn">
+Resume
+</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Azure Projects</h1>
+
+<p>
+Hands-on Azure labs, cloud deployments, monitoring solutions,
+and infrastructure projects.
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Project Library</h2>
+
+<div class="project-grid">
+
+<a href="azure-static-website/index.html"
+class="project-card">
+
+<h3>Azure Static Website</h3>
+
+<p>
+A portfolio website hosted using Azure Storage Static Website Hosting,
+Azure Monitor, and Azure Cost Management.
+</p>
+
+</a>
+
+<a href="azure-vm-lab/index.html"
+class="project-card">
+
+<h3>Azure VM Lab</h3>
+
+<p>
+Virtual machine deployment, networking, security groups,
+Windows Server administration, IIS configuration,
+monitoring, and cost management.
+</p>
+
+</a>
+
+<div class="project-card coming-soon">
+
+<h3>Azure Monitoring Lab</h3>
+
+<p>
+Monitoring, metrics, alerts, dashboards,
+and operational visibility.
+</p>
+
+</div>
+
+<div class="project-card coming-soon">
+
+<h3>Azure Networking Lab</h3>
+
+<p>
+Virtual networks, subnets, NSGs,
+and network architecture.
+</p>
+
+</div>
+
+<div class="project-card coming-soon">
+
+<h3>Azure Active Directory Lab</h3>
+
+<p>
+Identity management, users, groups,
+and access control.
+</p>
+
+</div>
+
+<div class="project-card coming-soon">
+
+<h3>Terraform Azure Deployment</h3>
+
+<p>
+Infrastructure as Code using Terraform
+and Azure resources.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Austin Montgomery
+
+</footer>
+
+</body>
+</html>
