@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Austin Montgomery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#EAEAEA;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.65)
+    ),
+    url('background.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    padding:25px 50px;
+}
+
+.nav-btn{
+    color:#EAEAEA;
+    border:1px solid #EAEAEA;
+    padding:10px 18px;
+    border-radius:6px;
+    transition:.25s;
+}
+
+.nav-btn:hover{
+    background:#EAEAEA;
+    color:#111;
+}
+
+.azure{
+    color:#0078D4;
+    border-color:#0078D4;
+}
+
+.azure:hover{
+    background:#0078D4;
+    color:white;
+}
+
+.aws{
+    color:#FF9900;
+    border-color:#FF9900;
+}
+
+.aws:hover{
+    background:#FF9900;
+    color:black;
+}
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    min-height:75vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:50px;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    color:white;
+}
+
+.hero-text h2{
+    font-weight:normal;
+    color:#B8B8B8;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.profile{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    border:3px solid rgba(255,255,255,.3);
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(255,255,255,.15);
+}
+
+.section{
+    max-width:1100px;
+    margin:50px auto;
+    padding:40px;
+
+    background:rgba(15,15,15,.75);
+    border-radius:18px;
+    backdrop-filter:blur(4px);
+}
+
+.section h3{
+    font-size:2rem;
+    margin-bottom:20px;
+    color:white;
+}
+
+.focus-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.focus-card{
+    padding:18px;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:10px;
+    text-align:center;
+}
+
+.project{
+    margin:15px 0;
+    padding:15px;
+    border-left:3px solid #0078D4;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#B8B8B8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html" class="nav-btn">Home</a>
+
+<a href="projects/azure/index.html"
+class="nav-btn azure">
+Azure </a>
+
+<a href="projects/aws/index.html"
+class="nav-btn aws">
+AWS </a>
+
+<a href="resume/index.html"
+class="nav-btn">
+Resume </a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Austin Montgomery</h1>
+
+<h2>
+Cloud Engineering • Infrastructure
+</h2>
+
+<p>
+Network Engineering student focused on cloud computing,
+automation, infrastructure, and security. Currently building hands-on
+Azure projects while pursuing Microsoft and CompTIA certifications.
+</p>
+
+</div>
+
+<img src="profile.jpg"
+alt="Austin Montgomery"
+class="profile">
+
+</section>
+
+<section class="section">
+
+<h3>About Me</h3>
+
+<p>
+I am pursuing a bachelor's degree in cloud and network engineering from Western Governors University (WGU). My interests include cloud
+engineering, DevOps, infrastructure automation,
+networking, and modern IT operations.
+</p>
+
+</section>
+
+<section class="section">
+
+<h3>Focus Areas</h3>
+
+<div class="focus-grid">
+
+<div class="focus-card">Azure</div>
+<div class="focus-card">AWS</div>
+<div class="focus-card">Networking</div>
+<div class="focus-card">DevOps</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h3>Featured Projects</h3>
+
+<div class="project">
+Azure Static Website
+</div>
+
+<div class="project">
+Azure VM Lab (Coming Soon)
+</div>
+
+<div class="project">
+Azure Monitoring Lab (Coming Soon)
+</div>
+
+</section>
+
+<section class="section">
+
+<h3>Contact</h3>
+
+<p>Email: austinmontgomery498@gmail.com</p>
+<p>GitHub: https://github.com/Draco1917</p>
+<p>LinkedIn: https://www.linkedin.com/in/austin-montgomery-4a212b244/</p>
+
+</section>
+
+<footer>
+
+© 2026 Austin Montgomery
+
+</footer>
+
+</body>
+</html>
